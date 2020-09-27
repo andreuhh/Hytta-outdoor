@@ -39,10 +39,12 @@ h1{font-size: 3rem;}
 }
 
 .header__logo{ 
+    z-index: 1;
 }
 
 .header__menu{
     text-align: center;
+    z-index: 0;
 }
 
 .header__menu li{display: inline-block;}
@@ -76,7 +78,7 @@ h1{font-size: 3rem;}
         background: var(--secondary-color);
         width: 100%;
         height: 100vh;
-        padding-top: 80px;   
+        padding-top: 160px;   
     }
 
     .header__menu--open{
