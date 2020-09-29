@@ -11,7 +11,7 @@
     --primary-color: #eb742f;
     --secondary-color:#F8F6F3;
     --transition: all .2s linear;
-    --big-padding: 70px;
+    --big-padding: 60px;
     --small-padding:20px;
 }
 
@@ -251,6 +251,42 @@ main{
 .main__service__items{padding-top: 25px; width: 100%;}
 }
 
+/* card activities */
 .main__cardsection{
-    padding-top: 50px;
+    padding-top: var(--big-padding)
+}
+
+/*------ CARD --------*/
+.cards{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+}
+
+.cards > article{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.cards > article:hover{
+    transition: transform .1 ease-out;
+    transform: translateY(5px);
+}
+
+.cards > article img{
+    width: 100%;
+}
+
+.text{padding: 0 20px 20px;}
+
+@media (max-width: 900px){
+    .cards{grid-template-columns: repeat(2,1fr);}
+}
+
+@media (max-width: 600px){
+    .cards{grid-template-columns: repeat(1,1fr);}
+    .cards > article{text-align: center;}
 }
