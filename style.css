@@ -23,17 +23,18 @@ p{font-size: 1.2rem;}
 
 a{text-decoration: none; color: black;}
 
-h1,h2,h3,h4,h5{color:#000; padding-bottom: 30px;}
+h1,h2,h3,h5{color:#000; padding-bottom: 30px;}
 
 h1{font-size: 3.5rem;}
 @media (max-width: 768px) {
     h1 {font-size: 2.3rem;}
 }
-h2{font-size: 2.5rem; font-weight: 600;}
+h2{font-size: 2.2rem; font-weight: 600;}
 @media (max-width: 768px) {
-    h1 {font-size: 2rem;}
+    h2 {font-size: 1.7rem;}
     h2{padding: 25px 0;}
 }
+h4{font-size: 1.5rem; font-weight: 500;}
 
 
 
@@ -223,6 +224,9 @@ main{
     main{margin: 10px; padding: var(--small-padding);}
 }
 
+/*PADDING AGGIUNTIVO*/
+.main__carddiv{padding: 0px 30px; margin: 70px 0;}
+
 /*main services*/
 .main__service{
     margin: 25px 0;
@@ -249,6 +253,11 @@ main{
 @media (max-width: 1000px){
 .main__service{flex-direction: column;justify-content: center; align-items: center;}
 .main__service__items{padding-top: 25px; width: 100%;}
+.main__carddiv{padding: 0px;}
+}
+
+@media (max-width: 768px){
+    .main__carddiv{margin: 20px 0;}
 }
 
 /* card activities */
@@ -268,25 +277,37 @@ main{
 .cards > article{
     border: 1px solid #ccc;
     border-radius: 3px;
-    text-align: center;
-}
-
-.cards > article:hover{
-    transition: transform .1 ease-out;
-    transform: translateY(5px);
+    text-align: left;
+    min-height: 420px;
 }
 
 .cards > article img{
     width: 100%;
+    height: auto;
 }
 
-.text{padding: 0 20px 20px;}
+span.orange{color: var(--primary-color); font-weight: 500;}
 
-@media (max-width: 900px){
+.cards > article > .text{padding: 10px}
+.cards > article > .text h4{padding-bottom: 10px;}
+.cards > article > .text p{padding-top: 15px;}
+
+@media (max-width: 1000px){
     .cards{grid-template-columns: repeat(2,1fr);}
 }
 
 @media (max-width: 600px){
     .cards{grid-template-columns: repeat(1,1fr);}
-    .cards > article{text-align: center;}
+}
+
+button.btn-secondary{
+    margin-top: 20px;
+    padding: 10px 20px ; 
+    border-radius: 50px; 
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: none;
+    transition: var(--transition);
 }
