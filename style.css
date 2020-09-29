@@ -17,6 +17,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+p{font-size: 1.2rem;}
+
 a{text-decoration: none; color: black;}
 
 h1,h2,h3,h4,h5{color:#000; padding-bottom: 30px;}
@@ -24,6 +26,11 @@ h1,h2,h3,h4,h5{color:#000; padding-bottom: 30px;}
 h1{font-size: 3.5rem;}
 @media (max-width: 768px) {
     h1 {font-size: 2.3rem;}
+}
+h2{font-size: 2.5rem; font-weight: 600;}
+@media (max-width: 768px) {
+    h1 {font-size: 2rem;}
+    h2{padding: 25px 0;}
 }
 
 
@@ -198,4 +205,43 @@ button.search-btn:active{text-decoration: none;}
     button.search-btn{
         margin-top: 20px;
     }
+}
+/* finish hero*/
+
+/*main start*/
+main{
+    text-align: center;
+    margin: 35px;
+    /*background-color: #eb742f;*/
+}
+@media (max-width: 768px){
+    main{margin: 10px;}
+}
+
+/*main services*/
+.main__service{
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__service__items{
+    display: flex;    
+    width: 33.33%;
+}
+
+.main__service__items p{
+    padding-top: 25px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+@media (max-width: 1200px){
+    .main__service{padding: 0px 10px;} 
+}
+
+@media (max-width: 1000px){
+.main__service{flex-direction: column;justify-content: center; align-items: center;}
+.main__service__items{padding-top: 25px; width: 100%;}
+    
 }
