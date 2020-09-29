@@ -310,4 +310,5 @@ button.btn-secondary{
     font-weight: 500;
     border: none;
     transition: var(--transition);
+    cursor: pointer;
 }
