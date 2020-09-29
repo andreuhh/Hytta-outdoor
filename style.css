@@ -11,6 +11,8 @@
     --primary-color: #eb742f;
     --secondary-color:#F8F6F3;
     --transition: all .2s linear;
+    --big-padding: 70px;
+    --small-padding:20px;
 }
 
 body{
@@ -32,6 +34,8 @@ h2{font-size: 2.5rem; font-weight: 600;}
     h1 {font-size: 2rem;}
     h2{padding: 25px 0;}
 }
+
+
 
 
 /* aggiungere glogal style per il testo */
@@ -210,17 +214,19 @@ button.search-btn:active{text-decoration: none;}
 
 /*main start*/
 main{
+    padding-top: var(--big-padding);
     text-align: center;
-    margin: 35px;
+    margin: 0px 35px;
     /*background-color: #eb742f;*/
 }
 @media (max-width: 768px){
-    main{margin: 10px;}
+    main{margin: 10px; padding: var(--small-padding);}
 }
 
 /*main services*/
 .main__service{
-    padding: 0px 10px;
+    margin: 25px 0;
+    padding: 0px 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -237,11 +243,14 @@ main{
 }
 
 @media (max-width: 1200px){
-    .main__service{padding: 0px 10px;} 
+    .main__service{padding: 0px 10px; margin: 0;} 
 }
 
 @media (max-width: 1000px){
 .main__service{flex-direction: column;justify-content: center; align-items: center;}
 .main__service__items{padding-top: 25px; width: 100%;}
-    
+}
+
+.main__cardsection{
+    padding-top: 50px;
 }
