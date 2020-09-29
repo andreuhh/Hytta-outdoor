@@ -8,8 +8,9 @@
 
 /* Global styles */
 :root{
-    --primary-color: #F3AC6A;
+    --primary-color: #eb742f;
     --secondary-color:#F8F6F3;
+    --transition: all .2s linear;
 }
 
 body{
@@ -20,11 +21,20 @@ a{text-decoration: none; color: black;}
 
 h1,h2,h3,h4,h5{color:#000; padding-bottom: 30px;}
 
-h1{font-size: 3rem;}
+h1{font-size: 3.5rem;}
+@media (max-width: 768px) {
+    h1 {font-size: 2.5rem;}
+}
+
 
 /* aggiungere glogal style per il testo */
 
-.button{padding: 10px 20px ; border-radius: 50px; background: var(--primary-color); font-weight: 500; }
+.button{
+    padding: 10px 20px ; 
+    border-radius: 50px; 
+    background: var(--primary-color); 
+    font-weight: 500; 
+    color: var(--secondary-color); }
 
 
 /* Header */
@@ -52,7 +62,9 @@ h1{font-size: 3rem;}
     display: block;
     color: black;
     padding: 35px;
+    transition: var(--transition);
 }
+.header__menu li a:hover{color: var(--primary-color);}
 
 .header__cta{
     /*border: 1px solid red;*/
@@ -60,9 +72,8 @@ h1{font-size: 3rem;}
     padding-top: 35px;
 }
 
-.header__cta a{
-    padding-left: 20px; 
-}
+.header__cta a{padding-left: 20px; }
+
 
 .hamburger{ display: none;}
 
@@ -113,7 +124,7 @@ h1{font-size: 3rem;}
     height: 100vh;
     background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.3), 
         rgba(0, 0, 0, 0)),url(img/hero.jpg) no-repeat center center;
     background-size: cover;
     background-position: center;
@@ -121,6 +132,7 @@ h1{font-size: 3rem;}
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 30vh;
 }
 
 .hero h1{
@@ -137,17 +149,40 @@ input.search-field{
     border-radius: 50px;
     border: none;
     outline: none;
-    width: 210px;
+    width: 20%;
 }
 
 button.search-btn{
     height: 50px;
     width: 120px;
     background: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 1.3rem;
     font-weight: 500;
     border: none;
     border-radius: 50px;
+    transition: var(--transition);
 }
 
+button.search-btn:hover{
+    transform: scale(1.1);
+}
 
+@media (max-width: 768px) {
+    .form{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input.search-field{
+        width: 50%;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    button.search-btn{
+        margin-top: 20px;
+    }
+}
