@@ -34,6 +34,7 @@ h2{font-size: 2.2rem; font-weight: 600;}
     h2 {font-size: 1.7rem;}
     h2{padding: 25px 0;}
 }
+h3{font-size: 2rem; font-weight: 600;}
 h4{font-size: 1.5rem; font-weight: 500;}
 
 
@@ -221,7 +222,7 @@ main{
     /*background-color: #eb742f;*/
 }
 @media (max-width: 768px){
-    main{margin: 10px; padding: var(--small-padding);}
+    main{margin: 0px; padding: var(--small-padding);}
 }
 
 /*PADDING AGGIUNTIVO*/
@@ -312,3 +313,74 @@ button.btn-secondary{
     transition: var(--transition);
     cursor: pointer;
 }
+
+
+
+
+/* REGISTER BLOCKS */
+section.registerBlock{
+    padding: 0 30px;
+}
+
+.registerBlock__container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+    align-items: center;
+    min-height: 350px;
+}
+
+.registerBlock__container__item1{
+    background: var(--secondary-color); 
+    min-height: 300px; 
+    border-radius: 5px;
+    min-height: 330px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerBlock__container__item2{
+    background:url(img/bivacco.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    min-height: 330px; 
+    border-radius: 5px;
+}
+
+button.btn-secondary-black{
+    margin-top: 35px;
+    padding: 10px 20px ; 
+    border-radius: 50px; 
+    background: black;
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: none;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+@media (max-width: 1000px){
+    .registerBlock__container{grid-template-columns: repeat(2,1fr);}
+    .registerBlock__container__item1{order: 1;}
+    .registerBlock__container__item1{order: 2;}
+    section.registerBlock{
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 768px){
+    .registerBlock__container{grid-template-columns: 1fr;}
+    .registerBlockText p{font-size: 1rem;}
+}
+
+
+
+
+
+
+
+
+
+
