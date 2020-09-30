@@ -315,9 +315,6 @@ button.btn-secondary{
     cursor: pointer;
 }
 
-
-
-
 /* REGISTER BLOCKS */
 section.registerBlock{
     padding: 0 30px;
@@ -374,6 +371,7 @@ button.btn-secondary-black{
 @media (max-width: 768px){
     .registerBlock__container{grid-template-columns: 1fr;}
     .registerBlockText p{font-size: 1rem;}
+    .registerBlockText{padding: 10px;}
 }
 
 
