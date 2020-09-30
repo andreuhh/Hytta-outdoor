@@ -38,7 +38,7 @@ h4{font-size: 1.5rem; font-weight: 500;}
 
 @media (max-width: 400px) {
     h1 {font-size: 2rem;}
-    h2 {font-size: 1.7rem; padding: 25px 0;}
+    h2 {font-size: 1.7rem;}
     h3{font-size: 1.3rem;}
 }
 
@@ -213,6 +213,10 @@ button.search-btn:active{text-decoration: none;}
     button.search-btn{
         margin-top: 20px;
     }
+}
+
+@media (max-width: 400px){
+    h1{padding: 10px 0}
 }
 /* finish hero*/
 
