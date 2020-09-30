@@ -370,8 +370,12 @@ button.btn-secondary-black{
 
 @media (max-width: 768px){
     .registerBlock__container{grid-template-columns: 1fr;}
-    .registerBlockText p{font-size: 1rem;}
-    .registerBlockText{padding: 10px;}
+    .registerBlockText p{font-size: 1rem; padding: 10px;}
+}
+
+@media (max-width: 400px){
+    .registerBlock__container__item1{min-height: 300px;} 
+    .registerBlock__container__item2{display: none;}
 }
 
 
