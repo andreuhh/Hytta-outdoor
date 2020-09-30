@@ -216,7 +216,7 @@ button.search-btn:active{text-decoration: none;}
 }
 
 @media (max-width: 400px){
-.hero__content h1{padding: 15px 0}
+.hero__content h1{padding: 0 20px}
 }
 /* finish hero*/
 
