@@ -388,42 +388,54 @@ button.btn-secondary-black{
     button.btn-secondary-black{margin-top: 10px;}
 }
 
-/* accordion */
-.accordion{
-    text-align: center;
+/*new accordion */
+.new-accordion{
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
 }
 
-button.accordion__btn{
-    background: #fff;
-    cursor: pointer;
-    width: 80%;
-    border: 0;
-    text-align: left;
-    transition: .4s;
-    padding: 20px;
+.accordion-item{
+    background-color: var(--secondary-color);
+    color: #111;
+    margin: 1rem 0;
     border-radius: 5px;
-    font-size: 1.2em;
-    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
 }
 
-button.accordion__btn.active, 
-button.accordion__btn.active:hover{
-    
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
 }
 
-.accordion__panel{
-    padding: 0 18px;
-    overflow: hidden;
-    width: 80%;
+.accordion-item-header::after{
+    /*content: "\25BE";*/
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.accordion-item-header.active::after{
+    /*content: "\2212";*/
+    transform: rotate(45deg);
+}
+
+.accordion-item-body{
     max-height: 0;
-    margin: 0 auto;
-    transition: max-height .2s ease-out;
-    border-bottom: 1px solid #C4C4C4;
-    border-top: 1px solid #C4C4C4;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
-.accordion__panel p{
-    padding: 15px 0;
-    font-size: 1rem;
+.accordion-item-body-content{
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid #C4C4C4; 
 }
-
