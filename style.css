@@ -28,7 +28,9 @@ h1,h2,h3,h5{color:#000; padding-bottom: 30px;}
 h1{font-size: 3.5rem;}
 h2{font-size: 2.2rem; font-weight: 600;}
 h3{font-size: 2rem; font-weight: 600;}
-h4{font-size: 1.5rem; font-weight: 500;}
+h4{font-size: 1.7rem; font-weight: 500;}
+
+button{outline: none; cursor: pointer;}
 
 @media (max-width: 768px) {
     h1 {font-size: 2.3rem;}
@@ -49,7 +51,9 @@ h4{font-size: 1.5rem; font-weight: 500;}
     border-radius: 50px; 
     background: var(--primary-color); 
     font-weight: 500; 
-    color: var(--secondary-color); }
+    color: var(--secondary-color);  
+
+}
 
 
 /* Header */
@@ -384,12 +388,34 @@ button.btn-secondary-black{
     button.btn-secondary-black{margin-top: 10px;}
 }
 
+/* accordion */
+.accordion{
+    text-align: center;
+}
 
+button.accordion__btn{
+    background: var(--secondary-color);
+    cursor: pointer;
+    border: 0px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    transition: .4s;
+}
 
+button.accordion__btn.active, 
+button.accordion__btn.active:hover{
+    background: #980A07;
+}
 
-
-
-
+.accordion__panel{
+    padding: 0 18px;
+    overflow: hidden;
+    width: 67.45%;
+    max-height: 0;
+    margin: 0 auto;
+    transition: max-height .2s ease-out;
+}
 
 
 
