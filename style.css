@@ -65,6 +65,7 @@ button{outline: none; cursor: pointer;}
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 }
 
 .header__logo{ 
@@ -281,7 +282,7 @@ main{
     margin: 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
+    grid-gap: 25px;
     align-items: center;
 }
 
@@ -332,7 +333,7 @@ section.registerBlock{
 .registerBlock__container{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: 30px;
+    grid-gap: 25px;
     align-items: center;
     min-height: 350px;
 }
@@ -345,6 +346,7 @@ section.registerBlock{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
 }
 
 .registerBlock__container__item2{
@@ -353,6 +355,7 @@ section.registerBlock{
     background-position: center;
     min-height: 330px; 
     border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
 }
 
 button.btn-secondary-black{
@@ -388,8 +391,9 @@ button.btn-secondary-black{
     button.btn-secondary-black{margin-top: 10px;}
 }
 
-/*new accordion */
-.new-accordion{
+/*--- ACCORDION -----*/
+.faq{margin-top: 30px;}
+.accordion{
     width: 90%;
     max-width: 1000px;
     margin: 2rem auto;
@@ -400,14 +404,14 @@ button.btn-secondary-black{
     color: #111;
     margin: 1rem 0;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
 }
 
 .accordion-item-header {
     padding: 0.5rem 3rem 0.5rem 1rem;
     min-height: 3.5rem;
     line-height: 1.25rem;
-    font-weight: bold;
+    font-weight: 600;
     display: flex;
     align-items: center;
     position: relative;
@@ -421,6 +425,7 @@ button.btn-secondary-black{
     position: absolute;
     right: 1rem;
     transition: transform 0.2s ease-in-out;
+    color: var(--primary-color);
 }
 
 .accordion-item-header.active::after{
@@ -438,4 +443,47 @@ button.btn-secondary-black{
     padding: 1rem;
     line-height: 1.5rem;
     border-top: 1px solid #C4C4C4; 
+    text-align: left;
+}
+
+/*------ GRID GALLERY --------*/
+.galleryBlock{
+    text-align: center;
+    margin: 0 30px;
+}
+.containerGallery{
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 230px);
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 10px 0;  
+}
+
+.containerGallery > div{
+    /*background: orangered;*/
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+}
+
+.containerGallery__item1{ 
+    background: url(img/canyoning1.jpg);
+    grid-column: 1/3; 
+    grid-row: 1/-1;
+}
+.containerGallery__item2{ 
+    background: url(img/kayak2.jpg);
+    grid-column: 3/-1; 
+    grid-row: 1 }
+.containerGallery__item3{
+    background: url(img/skate3.jpg);
+    grid-column: 3/4;
+    grid-row: 2;
+}
+.containerGallery__item4{
+    background: url(img/snowbike.jpg);
+    grid-column: 4 / -1;
+    grid-row: 2;
 }
