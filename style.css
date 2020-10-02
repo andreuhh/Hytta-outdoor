@@ -459,6 +459,10 @@ button.btn-secondary-black{
     padding-bottom: 10px;
 }
 
+.containerGallery__price span{
+    font-weight: 600;
+}
+
 @media (max-width: 1000px){
     .containerGallery{
         grid-template-columns: 1fr;
