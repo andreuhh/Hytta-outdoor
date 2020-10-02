@@ -450,7 +450,7 @@ button.btn-secondary-black{
 /*------ GRID GALLERY --------*/
 .galleryBlock{
     text-align: center;
-    margin: 0 30px;
+    margin: 100px 30px;
 }
 .containerGallery{
   display: grid;
@@ -534,6 +534,12 @@ button.btn-secondary-black{
     .containerGallery__item4{
         grid-column: 1/-1;
         grid-row: 4/-1; 
+    }
+}
+
+@media (max-width: 767px){
+    .galleryBlock{
+        margin: 50px 10px;
     }
 }
 
