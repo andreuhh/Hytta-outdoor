@@ -388,64 +388,9 @@ button.btn-secondary-black{
 
 @media (max-width: 400px){
     .registerBlock__container__item1{min-height: 300px;} 
-    .registerBlock__container__item2{display: none;}
+    /*.registerBlock__container__item2{display: none;}*/
     .registerBlockText p{font-size: 1rem; padding: 10px;}
     button.btn-secondary-black{margin-top: 10px;}
-}
-
-/*--- ACCORDION -----*/
-.faq{margin-top: 30px;}
-.accordion{
-    width: 90%;
-    max-width: 1000px;
-    margin: 2rem auto;
-}
-
-.accordion-item{
-    background-color: var(--secondary-color);
-    color: #111;
-    margin: 1rem 0;
-    border-radius: 5px;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
-}
-
-.accordion-item-header {
-    padding: 0.5rem 3rem 0.5rem 1rem;
-    min-height: 3.5rem;
-    line-height: 1.25rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-}
-
-.accordion-item-header::after{
-    /*content: "\25BE";*/
-    content: "\002B";
-    font-size: 2rem;
-    position: absolute;
-    right: 1rem;
-    transition: transform 0.2s ease-in-out;
-    color: var(--primary-color);
-}
-
-.accordion-item-header.active::after{
-    /*content: "\2212";*/
-    transform: rotate(45deg);
-}
-
-.accordion-item-body{
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-.accordion-item-body-content{
-    padding: 1rem;
-    line-height: 1.5rem;
-    border-top: 1px solid #C4C4C4; 
-    text-align: left;
 }
 
 /*------ GRID GALLERY --------*/
@@ -548,10 +493,69 @@ button.btn-secondary-black{
     .galleryBlock{
         margin: 0px 10px;
     }
+    .containerGallery{
+        grid-template-rows: repeat(4, 210px);
+    }
 }
 
+/*--- ACCORDION -----*/
+.faq{margin-top: 0px;}
+.accordion{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
+.accordion-item{
+    background-color: var(--secondary-color);
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+}
 
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-item-header::after{
+    /*content: "\25BE";*/
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.2s ease-in-out;
+    color: var(--primary-color);
+}
+
+.accordion-item-header.active::after{
+    /*content: "\2212";*/
+    transform: rotate(45deg);
+}
+
+.accordion-item-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content{
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid #C4C4C4; 
+    text-align: left;
+}
+
+@media (max-width: 767px){
+    
+}
 
 
 
