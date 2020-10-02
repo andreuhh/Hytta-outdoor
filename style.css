@@ -634,9 +634,6 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
 
 @media (max-width: 1000px){
     footer{
-        margin-top: 100px;
-        width: 100%;
-        height: auto;
         padding: 0 15px;
     }
 
@@ -658,6 +655,12 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
     .footer__container__sect{width: 100%;} 
     .footer__container__sect .dx{order: 1;}
     .footer__container__sect.dx h5{padding-top: 60px;}
+}
+
+@media (max-width: 767px){
+    footer{
+       margin-top: 50px;
+    }
 }
 
 @media (max-width: 400px){
