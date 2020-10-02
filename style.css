@@ -543,6 +543,12 @@ button.btn-secondary-black{
     }
 }
 
+@media (max-width: 767px){
+    .galleryBlock{
+        margin: 20px 10px;
+    }
+}
+
 
 
 
