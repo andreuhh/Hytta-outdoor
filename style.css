@@ -28,7 +28,7 @@ h1,h2,h3,h5{color:#000; padding-bottom: 30px;}
 h1{font-size: 3.5rem;}
 h2{font-size: 2.2rem; font-weight: 600;}
 h3{font-size: 2rem; font-weight: 600;}
-h4{font-size: 1.7rem; font-weight: 500;}
+h4{font-size: 1.2rem; font-weight: 600;}
 h5{font-size: 1.5rem; font-weight: 600;}
 
 button{outline: none; cursor: pointer;}
@@ -293,7 +293,7 @@ main{
     border: .1px solid #ccc;
     border-radius: 3px;
     text-align: left;
-    min-height: 420px;
+    min-height: 430px;
 }
 
 .cards > article img{
