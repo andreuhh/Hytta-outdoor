@@ -101,7 +101,7 @@ button{outline: none; cursor: pointer;}
 
 .hamburger{ display: none;}
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     .header__cta {
         display: none;
     }
@@ -240,7 +240,7 @@ main{
 }
 
 /*PADDING AGGIUNTIVO*/
-.main__carddiv{padding: 0px 30px; margin: 70px 0;}
+.main__carddiv{padding: 0px 30px; margin: 85px 0;}
 
 /*main services*/
 .main__service{
@@ -573,9 +573,6 @@ footer{
     height: auto;
 }
 
-.footer__container__sect{width: 50%;}
-.footer__container__sect p{padding-top: 20px;}
-
 footer .footer__container{
     padding: 50px 0;
     display: flex;
@@ -583,18 +580,22 @@ footer .footer__container{
     text-align: center;
     color: #fff;
 }
+.footer__container__sect{width: 50%;}
+.footer__container__sect p{padding-top: 20px;}
+
+footer .footer__container h5{color:#fff}
 
 input.search-small{
-    font-size: 1.1rem;
+    font-size: 1rem;
     height: 50px;
     padding: 10px 20px;
-    margin-right: 20px;
+    margin: 50px 20px 0 0;
     border-radius: 50px;
     border: 1px solid var(--primary-color);
     background: black;
     color: #fff;
     outline: none;
-    width: 30%;
+    width: 35%;
 }
 
 .search-btn-small{
@@ -609,27 +610,52 @@ input.search-small{
     transition: var(--transition);
 }
 
-footer .footer__container p{
-    font-size: 1rem
-}
+footer .footer__container p{font-size: 1.2rem}
 
-footer .footer__container h5{
-    font-size: 1.2rem;
-    padding-top: 50px;
-}
+footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
 
-.footer__container__sect--miniMenu a{
-    color: #fff;
-    padding-right: 10px;
-}
+.footer__container__sect--miniMenu a{color: #fff;padding-right: 10px;transition: var(--transition);}
+.footer__container__sect--miniMenu a:hover{color: var(--primary-color);}
 
 .footer__container__sect--form input{
     margin-right: 30px;
 }
 
-.menu-social i{color: #fff}
+#social_title{padding-top: 50px;}
+.menu_social{display: flex; justify-content: center;}
 
-footer .footer__container h5{color:#fff}
+.menu_social a{
+    font-size: 2rem;
+    padding-left: 20px;
+    cursor: pointer;
+    color: #fff;
+    transition: var(--transition);
+}
+.menu_social a:hover{color: var(--primary-color);}
+
+@media (max-width: 1000px){
+    footer{
+        margin-top: 100px;
+        width: 100%;
+        height: auto;
+        padding: 0 15px;
+    }
+
+    footer .footer__container{
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        color: #fff;
+    }
+    footer .footer__container p{font-size: 1.1rem}
+    
+    .footer__container__sect{width: 100%;} 
+    .footer__container__sect .dx{order: 1;}
+    .footer__container__sect.dx h5{padding-top: 60px;}
+}
+
 
 
 
