@@ -43,6 +43,7 @@ button{outline: none; cursor: pointer;}
     h1 {font-size: 2rem;}
     h2 {font-size: 1.5rem; padding: 10px 0;}
     h3{font-size: 1.3rem;}
+    h5{font-size: 1rem;}
 }
 
 /* aggiungere glogal style per il testo */
