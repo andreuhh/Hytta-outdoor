@@ -661,14 +661,14 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
     footer{
        margin-top: 50px;
     }
-    .menu_social a{
-        font-size: 1rem;
-        padding-left: 10px;
-    }
 }
 
 @media (max-width: 400px){
     input.search-small{width: 100%;}
+    .footer__container__sect--miniMenu a{
+        font-size: .8rem;
+        padding-right: 5px;
+    }
 }
 
 
