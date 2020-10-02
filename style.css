@@ -60,6 +60,7 @@ button{outline: none; cursor: pointer;}
 
 /* Header */
 .header{
+    z-index: 1;
     background-color: #fff;
     width: 100%;
     position: fixed;
@@ -416,6 +417,7 @@ button.btn-secondary-black{
 }
 
 .containerGallery__item1{ 
+    position: relative;
     background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.1), 
@@ -424,15 +426,18 @@ button.btn-secondary-black{
     grid-row: 1/-1;
 }
 .containerGallery__item2{ 
+    position: relative;
     background: url(img/kayak2.jpg);
     grid-column: 3/-1; 
     grid-row: 1 }
 .containerGallery__item3{
+    position: relative;
     background: url(img/skate3.jpg);
     grid-column: 3/4;
     grid-row: 2;
 }
 .containerGallery__item4{
+    position: relative;
     background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.1), 
@@ -448,10 +453,13 @@ button.btn-secondary-black{
 }
 
 .containerGallery__price{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
     background: var(--primary-color);
     width: 100px;
-    margin-left: 10px;
-    margin-top: 50px;
+    /*margin-left: 10px;
+    margin-top: 50px;*/
 }
 
 .containerGallery__price p{
@@ -557,9 +565,71 @@ button.btn-secondary-black{
     text-align: left;
 }
 
-@media (max-width: 767px){
-    
+/* FOOTER */
+footer{
+    margin-top: 100px;
+    background: black;
+    width: 100%;
+    height: auto;
 }
+
+.footer__container__sect{width: 50%;}
+.footer__container__sect p{padding-top: 20px;}
+
+footer .footer__container{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #fff;
+}
+
+input.search-small{
+    font-size: 1.1rem;
+    height: 50px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+    border: 1px solid var(--primary-color);
+    background: black;
+    color: #fff;
+    outline: none;
+    width: 30%;
+}
+
+.search-btn-small{
+    height: 50px;
+    width: 120px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+footer .footer__container p{
+    font-size: 1rem
+}
+
+footer .footer__container h5{
+    font-size: 1.2rem;
+    padding-top: 50px;
+}
+
+.footer__container__sect--miniMenu a{
+    color: #fff;
+    padding-right: 10px;
+}
+
+.footer__container__sect--form input{
+    margin-right: 30px;
+}
+
+.menu-social i{color: #fff}
+
+footer .footer__container h5{color:#fff}
 
 
 
