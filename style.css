@@ -58,7 +58,7 @@ button{outline: none; cursor: pointer;}
 }
 
 
-/* Header */
+/*---------------------Header--------------------------------------*/
 .header{
     z-index: 1;
     background-color: #fff;
@@ -151,7 +151,7 @@ button{outline: none; cursor: pointer;}
 }
 /* Header End */
 
-/* Hero*/
+/*---------------------Hero--------------------------------------*/
 .hero{
     height: 100vh;
     background: linear-gradient(
@@ -226,9 +226,9 @@ button.search-btn:active{text-decoration: none;}
 @media (max-width: 400px){
 .hero__content h1{padding: 0 10px}
 }
-/* finish hero*/
+/*---------------------finish hero--------------------------------------*/
 
-/*main start*/
+/*---------------------main start--------------------------------------*/
 main{
     padding-top: var(--big-padding);
     text-align: center;
@@ -274,8 +274,129 @@ main{
 @media (max-width: 768px){
     .main__carddiv{margin: 20px 0;}
 }
+/*-----------------------------------------------------------*/
 
-/* card activities */
+
+/*--------------------- CAROUSEL-------------------------*/
+h2#carouselTitle{
+    padding: 50px 0 ;
+}
+.carousel-container{
+    width: 1280px;
+    margin: 0px auto;
+    min-height: 200px;
+    position: relative; /* necessary for arrow icons*/
+    
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-container{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .carousel-container{
+        width: 90%;
+    }
+    .nav-carousel .next{
+        right: -30px;
+        display: block;
+    }
+}
+
+.carousel-container  .carousel-inner{
+    overflow: hidden;
+}
+
+.carousel-container .track{
+    display: inline-flex;
+    transition: transform 0.3s;
+}
+
+.carousel-container .card-container-carousel{
+    width: 259px; /* result of 1280/5 5is the number of the elements*/
+    height: 270px;
+    flex-shrink: 0;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.carousel-container .card-container-carousel .card-carousel{
+    width: 100%;
+    height: 100%;
+    
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-carousel button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.nav-carousel .prev{
+    left: -30px;
+    display: none;
+}
+
+.nav-carousel .prev.show{
+    display: block;
+}
+
+.nav-carousel .next{
+    right: -30px;   
+}
+
+@media screen and (min-width: 1250px) {
+    .nav-carousel .next{
+        display: none;
+    }
+}
+
+.nav-carousel .next.hide{
+    display: none;
+}
+
+.card-carousel > * {
+    flex: 1;
+}
+
+.card-carousel .img-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-size: cover ;
+    background-position: center;
+    border-radius: 5px;
+    transition: all .4s linear;
+}
+
+.card-carousel .img-carousel:hover{
+    opacity: .85;
+}
+
+.card-carousel .img-carousel p{margin-top:80%;font-weight: 700; color: #fff; font-size: 1.4rem;}
+
+.img-carousel.img-1{background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),url(img/waterElem.jpg); }
+.img-carousel.img-2{background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),url(img/landElem.jpg); }
+.img-carousel.img-3{background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),url(img/airElem.jpg); }
+.img-carousel.img-4{background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),url(img/snowElem.jpg); }
+.img-carousel.img-5{background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),url(img/elementUrban.jpg); }
+
+/*-----------------------------------------------------------*/
+
+/*--------------------- CARD ACTIVITY-------------------------*/
 .main__cardsection{
     padding-top: var(--big-padding)
 }
@@ -510,7 +631,7 @@ button.btn-secondary-black{
     }
 }
 
-/*--- ACCORDION -----*/
+/*------------- ACCORDION ---------------*/
 .faq{margin-top: 0px;}
 .accordion{
     width: 90%;
@@ -565,7 +686,7 @@ button.btn-secondary-black{
     text-align: left;
 }
 
-/* FOOTER */
+/*---------- FOOTER ------------*/
 footer{
     margin-top: 100px;
     background: black;
@@ -678,119 +799,3 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
 
 
 
-/* Carousel */
-h2#carouselTitle{
-    padding: 50px 0 ;
-}
-.carousel-container{
-    width: 1280px;
-    margin: 0px auto;
-    min-height: 200px;
-    position: relative; /* necessary for arrow icons*/
-    
-}
-
-@media screen and (max-width: 768px) {
-    .carousel-container{
-        width: 85%;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-    .carousel-container{
-        width: 90%;
-    }
-    .nav-carousel .next{
-        right: -30px;
-        display: block;
-    }
-}
-
-.carousel-container  .carousel-inner{
-    overflow: hidden;
-}
-
-.carousel-container .track{
-    display: inline-flex;
-    transition: transform 0.3s;
-}
-
-.carousel-container .card-container-carousel{
-    width: 259px; /* result of 1280/5 5is the number of the elements*/
-    height: 270px;
-    flex-shrink: 0;
-    padding-right: 15px;
-    box-sizing: border-box;
-}
-
-.carousel-container .card-container-carousel .card-carousel{
-    width: 100%;
-    height: 100%;
-    
-    box-sizing: border-box;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-carousel button{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-
-.nav-carousel .prev{
-    left: -30px;
-    display: none;
-}
-
-.nav-carousel .prev.show{
-    display: block;
-}
-
-.nav-carousel .next{
-    right: -30px;   
-}
-
-@media screen and (min-width: 1250px) {
-    .nav-carousel .next{
-        display: none;
-    }
-}
-
-.nav-carousel .next.hide{
-    display: none;
-}
-
-.card-carousel > * {
-    flex: 1;
-}
-
-.card-carousel .img-carousel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    background-size: cover ;
-    background-position: center;
-    border-radius: 5px;
-    transition: all .4s linear;
-}
-
-.card-carousel .img-carousel:hover{
-    opacity: .85;
-}
-
-.card-carousel .img-carousel p{margin-top:80%;font-weight: 700; color: #fff; font-size: 1.4rem;}
-
-.img-carousel.img-1{background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),url(img/waterElem.jpg); }
-.img-carousel.img-2{background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),url(img/landElem.jpg); }
-.img-carousel.img-3{background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),url(img/airElem.jpg); }
-.img-carousel.img-4{background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),url(img/snowElem.jpg); }
-.img-carousel.img-5{background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)),url(img/elementUrban.jpg); }
