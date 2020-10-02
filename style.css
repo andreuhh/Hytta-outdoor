@@ -660,6 +660,10 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
     .footer__container__sect.dx h5{padding-top: 60px;}
 }
 
+@media (max-width: 400px){
+    input.search-small{width: 100%;}
+}
+
 
 
 
