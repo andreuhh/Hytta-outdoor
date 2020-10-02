@@ -675,3 +675,116 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
 
 
 
+
+
+
+/* Carousel */
+.carousel-container{
+    width: 1280px;
+    margin: 50px auto;
+    min-height: 200px;
+    position: relative; /* necessary for arrow icons*/
+    
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-container{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .carousel-container{
+        width: 90%;
+    }
+    .nav-carousel .next{
+        right: -30px;
+        display: block;
+    }
+}
+
+.carousel-container  .carousel-inner{
+    overflow: hidden;
+}
+
+.carousel-container .track{
+    display: inline-flex;
+    transition: transform 0.3s;
+}
+
+.carousel-container .card-container-carousel{
+    width: 259px; /* result of 1280/5 5is the number of the elements*/
+    height: 270px;
+    flex-shrink: 0;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.carousel-container .card-container-carousel .card-carousel{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-carousel button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.nav-carousel .prev{
+    left: -30px;
+    display: none;
+}
+
+.nav-carousel .prev.show{
+    display: block;
+}
+
+.nav-carousel .next{
+    right: -30px;   
+}
+
+@media screen and (min-width: 1250px) {
+    .nav-carousel .next{
+        display: none;
+    }
+}
+
+.nav-carousel .next.hide{
+    display: none;
+}
+
+.card-carousel > * {
+    flex: 1;
+}
+
+.card-carousel .img-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-size: cover ;
+    background-position: center;
+    background-image: url(img/skate3.jpg);
+}
+
+.card-carousel .info-carousel{
+    flex-basis: 40px;
+    flex-grow: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+
