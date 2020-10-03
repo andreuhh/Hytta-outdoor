@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hytta</title>
+    <!-- Reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <!-- Style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="img/logoprova.png" alt="">
+            </a>        
+        </div>
+        <ul class="header__menu">
+            <li><a href="attivita.html">Attività</a></li>
+            <li><a href="">Noleggio</a></li>
+            <li><a href="">Chi siamo</a></li>
+            <li class="only-mobile"><a href="">Diventa Partner</a></li>
+            <li class="only-mobile "><a href="" class="orange">Accedi</a></li>
+        </ul>
+        <div class="header__cta">
+            <a href="" class="button">Accedi</a>
+            <a href="">Diventa Partner</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+  <main class="main__activities">
+      <h2>Attività</h2>
+      <div class="actFilterCont">
+          <div class="actFilterCont__filter">
+            
+            <div class="form__filter">
+                <input type="text" class="form__filter--input" placeholder=" Località">
+                <input type="text" class="form__filter--input" placeholder="Data">
+                <input type="text" class="form__filter--input" placeholder="Categoria">
+                <input type="text" class="form__filter--input" placeholder="Attività">
+            </div>
+            <button class="button--filter" type="button">Cerca</button>
+            
+          </div>
+
+          <div class="container">
+            <section class="cards cards--3col">
+                <article>
+                    <img src="img/card/horse1-card.jpg" alt="">
+                    <div class="text">
+                        <h4>Giornata a cavallo sui colli della Maremma</h4>
+                        <p>Attività'</p>
+                        <p>Categoria: Equitazione</p>
+                        <p><i class="fas fa-map-marker-alt"></i><span>  Montieri, Grosseto</span></p>
+                        <p><i class="far fa-clock"></i><span>  Durata: 6 ore</span></p>
+                        <p>da<span class="orange"> 90€</span></p>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="img/card/rafting2-card.jpg" alt="">
+                    <div class="text">
+                        <h4>Rafting Marathon sul fiume Noce in Trentino</h4>
+                        <p>Attività'</p>
+                        <p>Categoria: Rafting</p>
+                        <p><i class="fas fa-map-marker-alt"></i><span>  Ossana, Trento</span></p>
+                        <p><i class="far fa-clock"></i><span> 4 ore</span></p>
+                        <p>da<span class="orange"> 64€</span></p>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="img/card/surfclass1-card.jpg" alt="">
+                    <div class="text">
+                        <h4>Corso privato di surf</h4>
+                        <p>Attività'</p>
+                        <p>Categoria: Surf</p>
+                        <p><i class="fas fa-map-marker-alt"></i><span> Lido di Ostia</span></p>
+                        <p><i class="far fa-clock"></i><span> 2 ore</span></p>
+                        <p>da<span class="orange"> 30€</span></p>
+                    </div>
+                </article>
+
+                <article class="showOn2col">
+                    <img src="img/card/surfclass1-card.jpg" alt="">
+                    <div class="text">
+                        <h4>Corso privato di surf</h4>
+                        <p>Attività'</p>
+                        <p>Categoria: Surf</p>
+                        <p><i class="fas fa-map-marker-alt"></i><span> Lido di Ostia</span></p>
+                        <p><i class="far fa-clock"></i><span> 2 ore</span></p>
+                        <p>da<span class="orange"> 30€</span></p>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="cards cards--3col">
+                <article>
+                    <img src="img/card/horse1-card.jpg" alt="">
+                    <div class="text">
+                        <h4>Giornata a cavallo sui colli della Maremma</h4>
+                        <p>Attività'</p>
+                        <p>Categoria: Equitazione</p>
+                        <p><i class="fas fa-map-marker-alt"></i><span>  Montieri, Grosseto</span></p>
+                        <p><i class="far fa-clock"></i><span>  Durata: 6 ore</span></p>
+                        <p>da<span class="orange"> 90€</span></p>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="img/card/rafting2-card.jpg" alt="">
+                    <div class="text">
+                        <h4>Rafting Marathon sul fiume Noce in Trentino</h4>
+                        <p>Attività'</p>
+                        <p>Categoria: Rafting</p>
+                        <p><i class="fas fa-map-marker-alt"></i><span>  Ossana, Trento</span></p>
+                        <p><i class="far fa-clock"></i><span> 4 ore</span></p>
+                        <p>da<span class="orange"> 64€</span></p>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="img/card/surfclass1-card.jpg" alt="">
+                    <div class="text">
+                        <h4>Corso privato di surf</h4>
+                        <p>Attività'</p>
+                        <p>Categoria: Surf</p>
+                        <p><i class="fas fa-map-marker-alt"></i><span> Lido di Ostia</span></p>
+                        <p><i class="far fa-clock"></i><span> 2 ore</span></p>
+                        <p>da<span class="orange"> 30€</span></p>
+                    </div>
+                </article>
+
+                <article class="showOn2col">
+                    <img src="img/card/surfclass1-card.jpg" alt="">
+                    <div class="text">
+                        <h4>Corso privato di surf</h4>
+                        <p>Attività'</p>
+                        <p>Categoria: Surf</p>
+                        <p><i class="fas fa-map-marker-alt"></i><span> Lido di Ostia</span></p>
+                        <p><i class="far fa-clock"></i><span> 2 ore</span></p>
+                        <p>da<span class="orange"> 30€</span></p>
+                    </div>
+                </article>
+
+            </section>
+
+        </div> 
+
+
+      </div>
+  </main>
+   
+                  
+    <footer>
+        <div class="footer__container">
+            <div class="footer__container__sect">
+                <p>Registrati per rimanere sempre aggiornato sulle nostre  attività</p>
+                <div class="footer__container__dx--form">
+                    <input type="text" class="search-small" placeholder="E-mail">
+                    <button class="search-btn-small" type="button">Registrati</button>
+                </div>
+            </div>
+
+            <div class="footer__container__sect dx">
+                <h5>Seguici sui social</h5>
+                <div class="menu_social">                    
+                    <a href="https://www.facebook.com/mohole/" title="facebook" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/scuolamohole/?hl=it"  title="instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>                        
+                    <a href="https://www.youtube.com/channel/UCOu3XN2DB6lFEQTIeo41Nxw" id="yt" title="youtube" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>                             
+                </div>
+
+                <h5 id="social_title">Hytta SRL</h5>
+                <div class="footer__container__sect--miniMenu">
+                    <a href="">Attività</a>
+                    <a href="">Noleggio</a>
+                    <a href="">Chi siamo</a>
+                    <a href="">Diventa partner</a>
+                    <a href="">Accedi</a>
+                </div>
+    
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

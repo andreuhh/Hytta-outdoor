@@ -35,7 +35,7 @@ button{outline: none; cursor: pointer;}
 
 @media (max-width: 768px) {
     h1 {font-size: 2.3rem;}
-    h2 {font-size: 1.7rem; padding: 20px 0;}
+    h2 {font-size: 1.7rem; padding: 40px 0 15px 0;}
     h3{font-size: 1.5rem;}
 }
 
@@ -616,9 +616,9 @@ button.btn-secondary-black{
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 768px){
     .galleryBlock{
-        margin: 50px 10px;
+        margin: 40px 10px;
     }
 }
 
@@ -778,9 +778,9 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
     .footer__container__sect.dx h5{padding-top: 60px;}
 }
 
-@media (max-width: 767px){
+@media (max-width: 768px){
     footer{
-       margin-top: 50px;
+       margin-top:30px;
     }
 }
 
@@ -792,10 +792,90 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
     }
 }
 
+/* ACTIVITIES & RENT PAGES*/
+.main__activities{padding: 150px 0px 0px 0px;}
+.actFilterCont{
+    display: flex;
+    justify-content: center; 
+    padding: 50px 20px;
+}
 
+.showOn2col{display: none;}
 
+.actFilterCont__filter{
+    background: var(--secondary-color); 
+    margin: 10px 20px 0 0; 
+    height: 320px; 
+    width: 30%;
+}
 
+.form__filter{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding-top: 20px;
+}
 
+.form__filter--input{
+    margin-top: 15px;
+    font-size: 1rem;
+    height: 35px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    width: 70%; 
+}
+
+.button--filter{
+    margin-top: 15px;
+    height: 40px;
+    width: 100px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    transition: var(--transition);  
+}
+
+.cards--3col{
+    margin: 10px 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    align-items: center;
+    /*background: cyan;*/
+}
+
+@media (max-width: 1200px){
+    .cards--3col{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .showOn2col{display: block;}
+}
+
+@media (max-width: 900px){
+    .cards--3col{
+        grid-template-columns: repeat(2,fr);    
+    }
+
+    .actFilterCont{
+        display: flex;
+        justify-content: center; 
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .actFilterCont__filter{width: 100%;}
+}
+
+@media (max-width: 600px){
+    .cards--3col{
+        grid-template-columns: repeat(1,1fr);    
+    }
+}
 
 
 
