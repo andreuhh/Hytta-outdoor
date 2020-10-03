@@ -10,7 +10,7 @@
 :root{
     --primary-color: #eb742f;
     --secondary-color:#F8F6F3;
-    --transition: all .5s linear;
+    --transition: all .2s linear;
     --big-padding: 60px;
     --small-padding:20px;
 }
