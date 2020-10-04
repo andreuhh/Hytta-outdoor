@@ -873,7 +873,6 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
         grid-template-columns: repeat(1,1fr);    
     }
 }
-
 /*----------- ACTIVITY PAGE ------------*/
 .hero--small{
     height: 80vh;
@@ -1000,4 +999,22 @@ hr.divide{width: 70%;}
     border-radius: 50%;
     margin-right: 20px;
 }
+
+@media (max-width: 1024px){
+    .actDescription{
+        flex-direction: column;
+    }
+    .column-3{width: 100%;}
+    .column-1{width: 100%;}
+
+    .actDescription__recap{order: 1; margin: 20px 0;}
+    .actDescription__text{order: 2;} 
+}
+
+
+
+
+
+
+
 
