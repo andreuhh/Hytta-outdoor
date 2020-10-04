@@ -879,6 +879,9 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
     background: url(img/horse1_singleAct.jpg) no-repeat center center;
     margin: 9% 0 0 0%;
     padding-top: 30vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 section.singleAct{
@@ -1021,7 +1024,18 @@ hr.divide{width: 70%;}
 /* hero rent */
 .hero--small--rent{
     background: url(img/bikeBg.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
+/* card you could be interested in? */
+.main__carddiv.singlePage h3{
+    text-align: center;
+}
 
+@media (max-width: 1024px) {
+    .main__carddiv.singlePage{
+        margin: 0 2%;
+    }
+}
 
