@@ -876,10 +876,7 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
 /*----------- ACTIVITY PAGE ------------*/
 .hero--small{
     height: 80vh;
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.2), 
-        rgba(0, 0, 0, 0)),url(img/horse1_singleAct.jpg) no-repeat center center;
+    background: url(img/horse1_singleAct.jpg) no-repeat center center;
     margin: 9% 0 0 0%;
     padding-top: 30vh;
 }
@@ -1007,8 +1004,10 @@ hr.divide{width: 70%;}
     .column-3{width: 100%;}
     .column-1{width: 100%;}
 
-    .actDescription__recap{order: 1; margin: 20px 0;}
+    .actDescription__recap{order: 1; margin: 30px 0;}
     .actDescription__text{order: 2;} 
+
+    
 }
 
 
