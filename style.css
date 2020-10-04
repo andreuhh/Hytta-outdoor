@@ -793,11 +793,11 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
 }
 
 /* ACTIVITIES & RENT PAGES*/
-.main__activities{padding: 150px 0px 0px 0px;}
+.main__activities{padding: 200px 0px 0px 0px;}
 .actFilterCont{
     display: flex;
     justify-content: center; 
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
 .showOn2col{display: none;}
@@ -856,11 +856,8 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
     .showOn2col{display: block;}
 }
 
-@media (max-width: 900px){
-    .cards--3col{
-        grid-template-columns: repeat(2,fr);    
-    }
-
+@media (max-width: 1000px){
+    .main__activities{padding: 130px 0px 0px 0px;}
     .actFilterCont{
         display: flex;
         justify-content: center; 
@@ -868,7 +865,7 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
         padding: 15px 20px;
     }
 
-    .actFilterCont__filter{width: 100%;}
+    .actFilterCont__filter{width: 100%; margin: 10px 20px 20px 0; }
 }
 
 @media (max-width: 600px){
