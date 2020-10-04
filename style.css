@@ -792,7 +792,7 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
     }
 }
 
-/* ACTIVITIES & RENT PAGES*/
+/*----------- ACTIVITIES & RENT PAGES ------------*/
 .main__activities{padding: 200px 0px 0px 0px;}
 .actFilterCont{
     display: flex;
@@ -874,5 +874,31 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
     }
 }
 
+/*----------- ACTIVITY PAGE ------------*/
+.hero--small{
+    height: 80vh;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 0)),url(img/horse1_singleAct.jpg) no-repeat center center;
+    margin: 9% 0 0 0%;
+    padding-top: 30vh;
+}
 
+section.singleAct{
+    margin: 2% ; 
+    text-align: left;
+    display: grid;
+}
+h3.singleAct{padding: 0; margin: 0;}
 
+.actDescription{display: flex;}
+.column-3{width: 70%;}
+.column-1{width: 30%;}
+
+.actDescription__text{ background: #eb742f;}
+.actDescription__recap{ 
+    background: var(--secondary-color);
+    text-align: center;
+}
+.actDescription__recap--input{display: flex; flex-direction: column;}
