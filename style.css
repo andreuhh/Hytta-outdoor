@@ -882,7 +882,7 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
 }
 
 section.singleAct{
-    margin: 2% 4%; 
+    margin: 3% 4% 2% 4%; 
     text-align: left;
     display: grid;
 }
@@ -1018,8 +1018,10 @@ hr.divide{width: 70%;}
     }
 }
 
-
-
+/* hero rent */
+.hero--small--rent{
+    background: url(img/bikeBg.jpg);
+}
 
 
 
