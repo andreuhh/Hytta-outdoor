@@ -893,14 +893,16 @@ section.singleAct{
 h3.singleAct{padding: 0; margin: 0;}
 
 .actDescription{display: flex;}
+
 .column-3{width: 70%;}
 .column-1{width: 30%;}
 
-.actDescription__text{ /*background: #eb742f;*/}
+
 .actDescription__recap{ 
     background: var(--secondary-color);
     text-align: center;
     border-radius: 5px;
+    height: 270px;
 }
 
 .actDescription__recap--input{display: flex; flex-direction: column; align-items: center;}
@@ -927,7 +929,7 @@ h3.singleAct{padding: 0; margin: 0;}
     color: #fff;
 }
 
-.divide{width: 70%;}
+hr.divide{width: 70%;}
 
 .showPrice{display: flex; justify-content: space-around;}
 
@@ -945,18 +947,57 @@ h3.singleAct{padding: 0; margin: 0;}
 }
 
 /* textual activity description*/
-.actDescription__item{
+.actDescription__icon{
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     padding: 20px 50px 0 0px;
 }
 
-.actDescription__item i{
+.actDescription__icon i{
     font-size: 21px;
     padding-right: 5px;
 }
 
-.textContainer{width: 90%;}
+.textContainer{width: 95%;}
+.textContainer h4{font-size: 1.4rem; padding: 55px 0 15px 0;}
+.textContainer p{padding: 10px;}
 
+.step{
+    display: flex;
+    justify-content: space-around;
+}
 
+.step__item{
+    margin: 20px 0;
+}
+
+.step__item--num{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.step__item--text h5{
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+.partner{
+    display: flex;
+    align-items: center;
+}
+
+.partner__img{
+    width: 60px;
+    height: 60px;
+    background: url(img/horse1_partner.jpg);
+    border-radius: 50%;
+    margin-right: 20px;
+}
 
