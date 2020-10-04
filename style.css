@@ -900,5 +900,58 @@ h3.singleAct{padding: 0; margin: 0;}
 .actDescription__recap{ 
     background: var(--secondary-color);
     text-align: center;
+    border-radius: 5px;
 }
-.actDescription__recap--input{display: flex; flex-direction: column;}
+
+.actDescription__recap--input{display: flex; flex-direction: column; align-items: center;}
+.actDescription__recap--input input{
+    margin-top: 25px;
+    font-size: 1rem;
+    height: 35px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    width: 70%;
+}
+
+.people{display: flex; justify-content: space-around; align-items: center;padding: 20px 0; width: 70%;}
+.people__buttonCont{display: flex; justify-content: space-around; width: 100%; align-items: center;} 
+.people__buttonCont button{
+    width: 40px; 
+    height: 40px; 
+    font-size: 24px; 
+    border-radius: 50%;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.divide{width: 70%;}
+
+.showPrice{display: flex; justify-content: space-around;}
+
+.btn--big{
+    height: 40px;
+    width: 70%;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    transition: var(--transition);
+    margin: 20px 0 25px 0;
+}
+
+/* textual activity description*/
+.actDescription__item{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 0px;
+}
+
+
+
+
+
