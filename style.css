@@ -1055,16 +1055,25 @@ hr.divide{width: 70%;}
     height: 80vh;
      background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0)),url(img/canoeyng-bg.jpg) no-repeat center center;
 }
 
 .registerBlock--secondBlock{margin-top: 5%;}
 
+/* PARTNER PAGE */
+.hero--partner{
+    height: 80vh;
+     background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0)),url(img/coachKid.jpg) no-repeat center center;
+}
 
-
-
-
+.step__item--text--partnerPage h5{
+    text-align: left;
+    padding: 4% 0 0 3%;
+}
 
 
 
