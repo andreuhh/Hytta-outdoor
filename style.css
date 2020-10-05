@@ -1040,8 +1040,11 @@ hr.divide{width: 70%;}
 }
 
 /* CHI SIAMO PAGE*/
+.chiSiamoMain h2{
+    padding: 4% 0 1% 0;
+}
 .textContainer{
-    padding: 0;
+    padding: 0 4%;
 }
 
 .textContainer p{
@@ -1055,6 +1058,8 @@ hr.divide{width: 70%;}
         rgba(0, 0, 0, 0.2), 
         rgba(0, 0, 0, 0)),url(img/canoeyng-bg.jpg) no-repeat center center;
 }
+
+.registerBlock--secondBlock{margin-top: 5%;}
 
 
 
