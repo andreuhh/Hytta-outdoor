@@ -1,3 +1,29 @@
+// scrolling script
+document.addEventListener('DOMContentLoaded', function() {
+    const easeFunctions = {
+        easeInQuad: function(t, b, c, d) {
+            t /= d;
+            return c * t * t + b;
+        },
+        easeOutQuad: function(t, b, c, d) {
+            t /= d;
+            return -c * t * (t - 2) + b;
+        }
+    }
+    const moveTo = new MoveTo({
+        ease: 'easeInQuad'
+    }, easeFunctions);
+    const triggers = document.getElementsByClassName('js-trigger');
+    for (var i = 0; i < triggers.length; i++) {
+        moveTo.registerTrigger(triggers[i]);
+    }
+
+    
+});
+
+//////////////////////////////////////////////////////
+
+
 const burger = document.querySelector('.hamburger');
 const header = document.querySelector('.header__menu');
 burger.addEventListener('click', () => {
@@ -47,11 +73,6 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 });
 
 
-
-
-
-
-
 // slider
 
 const prev  = document.querySelector('.prev');
@@ -85,3 +106,5 @@ prev.addEventListener('click', () => {
     }
     track.style.transform = `translateX(-${index * carouselWidth}px)`;
 });
+
+
