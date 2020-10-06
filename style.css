@@ -22,7 +22,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-p{font-size: 1.1rem;}
+p{font-size: 1.1rem; line-height: 21px;}
 
 a{text-decoration: none; color: black;}
 
@@ -899,7 +899,6 @@ h3.singleAct{padding: 0; margin: 0;}
 .column-3{width: 70%;}
 .column-1{width: 30%;}
 
-
 .actDescription__recap{ 
     background: var(--secondary-color);
     text-align: center;
@@ -931,7 +930,7 @@ h3.singleAct{padding: 0; margin: 0;}
     color: #fff;
 }
 
-hr.divide{width: 70%;}
+hr.divide{width: 100%; margin-bottom: 15px; text-align: center;}
 
 .showPrice{display: flex; justify-content: space-around;}
 
@@ -963,7 +962,7 @@ hr.divide{width: 70%;}
 
 .textContainer{width: 95%;}
 .textContainer h4{font-size: 1.4rem; padding: 55px 0 15px 0;}
-.textContainer p{padding: 10px;}
+.textContainer p{padding: 10px 0;}
 
 .step{
     display: flex;
@@ -1073,26 +1072,34 @@ hr.divide{width: 70%;}
         rgba(0, 0, 0, 0)),url(img/coachKid.jpg) no-repeat center center;
 }
 
-.textContainer--partner{padding: 0; margin: 0; text-align: center; margin: 0 auto; /*background: orangered;*/}
+.textContainer--partner{text-align: center; margin: 0 auto; /*background: orangered;*/}
 .textContainer--partner h2{ margin: 0; padding: 3% 0 1% 0;}
 
-.textContainer__twoColCont{display: flex; justify-content: space-between; text-align: center;}
+.textContainer__twoColCont{display: flex; justify-content: space-between; text-align: center; padding-bottom: 4%;}
 .col50{width: 50%;}
 .col50 p{padding: 0 3%;}
 .col50 h2{text-align: left; padding: 0 3% 4% 3%;}
+
 
 .step__item--text--partnerPage h5{
     text-align: left;
     padding: 4% 0 0 3%;
 }
 
-@media (max-width: 1024px) {
- .col50{width: 100%;}
- .textContainer__twoColCont{flex-direction: column;}
+.textContainer__twoColCont--textImg{ padding: 7% 0 3% 0;}
+p.col50--bigText{ padding: 12% 5% 0% 30%; font-size: 1.8rem; font-weight: 200; line-height: 30px;}
+p.col50--smallText{ padding: 2% 20% 20% 30%; font-size: 1.2rem }
+
+.col50__imgVert{
+    width: 100%;
+    max-height: 440px;
 }
 
+.col50__imgVert img{border-radius: 5px;}
 
-
-
-
-
+@media (max-width: 1024px) {
+    .textContainer__twoColCont{flex-direction: column;}
+    .col50{width: 100%;}
+    .textContainer--partner{margin: 0; padding: 0;}
+    .col50--second{padding: 5% 0;}
+   }
