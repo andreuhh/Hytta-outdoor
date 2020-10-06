@@ -1075,7 +1075,13 @@ hr.divide{width: 100%; margin-bottom: 15px; text-align: center;}
 .textContainer--partner{text-align: center; margin: 0 auto; /*background: orangered;*/}
 .textContainer--partner h2{ margin: 0; padding: 3% 0 1% 0;}
 
-.textContainer__twoColCont{display: flex; justify-content: space-between; text-align: center; padding-bottom: 4%;}
+.textContainer__twoColCont{
+    display: flex; 
+    justify-content: space-between; 
+    text-align: center; 
+    padding-bottom: 4%;
+}
+
 .col50{width: 50%;}
 .col50 p{padding: 0 3%;}
 .col50 h2{text-align: left; padding: 0 3% 4% 3%;}
@@ -1099,7 +1105,21 @@ p.col50--smallText{ padding: 2% 20% 20% 30%; font-size: 1.2rem }
 
 @media (max-width: 1024px) {
     .textContainer__twoColCont{flex-direction: column;}
-    .col50{width: 100%;}
+    .textContainer__twoColCont .col50{width: 100%;}
     .textContainer--partner{margin: 0; padding: 0;}
-    .col50--second{padding: 5% 0;}
+    .col50--second{padding: 7% 0 5 0;}
+
+
+    .col50--firstMob{order:0}
+    .col50--afterMob{order:1}
+
+    .textContainer__twoColCont--textImg{ padding: 4% 0 1% 0; justify-content: center; align-items: center;}
+    p.col50--bigText{ padding: 5% 5% 0% 5%; font-size: 1.8rem; font-weight: 200; line-height: 30px; text-align: center;}
+    p.col50--smallText{padding: 1% 10%; font-size: 1.2rem;}
    }
+
+   @media (max-width: 500px){
+    .col50__imgVert img{width: 95%;}
+   }
+
+   
