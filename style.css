@@ -1107,14 +1107,14 @@ p.col50--smallText{ padding: 2% 20% 20% 30%; font-size: 1.2rem }
     .textContainer__twoColCont{flex-direction: column;}
     .textContainer__twoColCont .col50{width: 100%;}
     .textContainer--partner{margin: 0; padding: 0;}
-    .col50--second{padding: 7% 0 5 0;}
+    .col50--second{margin-top: 5%;}
 
 
     .col50--firstMob{order:0}
     .col50--afterMob{order:1}
 
     .textContainer__twoColCont--textImg{ padding: 4% 0 1% 0; justify-content: center; align-items: center;}
-    p.col50--bigText{ padding: 5% 5% 0% 5%; font-size: 1.8rem; font-weight: 200; line-height: 30px; text-align: center;}
+    p.col50--bigText{ padding: 5% 5% 0% 5%; font-size: 1.5rem; font-weight: 200; line-height: 30px; text-align: center;}
     p.col50--smallText{padding: 1% 10%; font-size: 1.2rem;}
    }
 
