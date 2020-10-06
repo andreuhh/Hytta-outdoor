@@ -1073,17 +1073,23 @@ hr.divide{width: 70%;}
         rgba(0, 0, 0, 0)),url(img/coachKid.jpg) no-repeat center center;
 }
 
-.textContainer--partner{padding: 0; margin: 0; text-align: center; background: red; margin: 0 auto;}
+.textContainer--partner{padding: 0; margin: 0; text-align: center; margin: 0 auto; /*background: orangered;*/}
+.textContainer--partner h2{ margin: 0; padding: 3% 0 1% 0;}
 
 .textContainer__twoColCont{display: flex; justify-content: space-between; text-align: center;}
 .col50{width: 50%;}
+.col50 p{padding: 0 3%;}
+.col50 h2{text-align: left; padding: 0 3% 4% 3%;}
 
 .step__item--text--partnerPage h5{
     text-align: left;
     padding: 4% 0 0 3%;
 }
 
-
+@media (max-width: 1024px) {
+ .col50{width: 100%;}
+ .textContainer__twoColCont{flex-direction: column;}
+}
 
 
 
