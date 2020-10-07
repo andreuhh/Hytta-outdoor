@@ -42,7 +42,7 @@ function checkRequired(inputArr) {
 // Check input lenght
 function checkLength(input, min, max){
     if(input.value.length < min) {
-        showError(input, `${getFieldName(input)} deve avere un minimo di ${min} caratteri`);
+        showError(input, `${getFieldName(input)} Inserisci almeno ${min} caratteri`);
     } else if (input.value.length > max) {
         showError(input, `${getFieldName(input)} deve avere un massimo di ${max} caratteri`);
     } else {
