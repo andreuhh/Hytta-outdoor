@@ -1207,13 +1207,13 @@ p.col50--smallText{ padding: 2% 20% 20% 30%; font-size: 1.2rem }
   @media (max-width: 768px){
     .formContainer{width: 80%;}
     .form-control input{width: 350px;}
+    .formButton{width: 200px;}
    }
 
    @media (max-width: 550px){
     
     .formContainer{width: 100%; margin: 2% auto;}
     .form-control input{width: 300px}
-    .formButton{width: 200px;}
 
     .form {
         padding: 15px 20px;
