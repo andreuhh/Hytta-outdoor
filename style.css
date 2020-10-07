@@ -1089,11 +1089,12 @@ hr.divide{width: 100%; margin-bottom: 15px; text-align: center;}
 .col50 p{padding: 0 3%;}
 .col50 h2{text-align: left; padding: 0 3% 4% 3%;}
 
-
+.step__item--text--partnerPage{margin-left: 5%;}
 .step__item--text--partnerPage h5{
     text-align: left;
-    padding: 4% 0 0 3%;
+    padding: 4% 0 0 0;
 }
+
 
 .textContainer__twoColCont--textImg{ padding: 7% 0 3% 0;}
 p.col50--bigText{ padding: 12% 5% 0% 30%; font-size: 1.8rem; font-weight: 200; line-height: 30px;}
