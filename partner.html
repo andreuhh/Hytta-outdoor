@@ -159,7 +159,42 @@
 
         </div>
 
-        <section id="registrati" class="faq">
+        <!--  FORM   -->
+
+        <div id="registrati"  class="formContainer">
+            <form id="form" class="form">
+              <h2>Registrati</h2>
+              <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Inserisci username" />
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Inserisci email" />
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Inserisci password" />
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="password2">Conferma Password</label>
+                <input
+                  type="password"
+                  id="password2"
+                  placeholder="Inserisci password again"
+                />
+                <small>Error message</small>
+              </div>
+              <button class="formButton" type="submit">Invia</button>
+            </form>
+          </div>
+
+        <!-- FINE  FORM   -->
+
+        <section class="faq">
             <h2>FAQ</h2>
             <div class="accordion">
 
@@ -252,7 +287,7 @@
 
     <!-- carico il plugin JS - è un plugin in JS vanilla, quindi non carico nient'altro prima -->
     <script src="js/moveTo.min.js"></script>
-   
+    <script src="js/form.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
