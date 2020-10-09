@@ -13,6 +13,7 @@
 :root{
     --primary-color: #eb742f;
     --secondary-color:#F8F6F3;
+    --black:#30343A;
 
     --success-color: #2ecc71;
     --error-color: #e74c3c;
@@ -173,24 +174,43 @@ button{outline: none; cursor: pointer;}
     padding-top: 30vh;
 }
 
+
 .hero h1{
     text-align: center;
     color: #fff;
     font-weight: 700;
 }
 
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    margin: 20px auto;
+    width: 35%;
+    border-radius: 50px;
+    font-size: 20px;
+    color: var(--primary-color);
+    /*border: 3px solid var(--primary-color);*/
+}
+
 input.search-field{
     font-size: 1.1rem;
     height: 50px;
-    padding: 10px 20px;
-    margin-right: 20px;
+    padding: 10px 0px;
+    margin-right: 0px;
     border-radius: 50px;
     border: none;
     outline: none;
-    width: 20%;
+    width: 80%;
     transition: var(--transition);
+    text-align: left;
 }
-input.search-field:focus{border: 3px solid var(--primary-color);}
+
+.left{width: 15%; text-align: right;}
+.right{width: 85%;}
+
+/*input.search-field:focus{border: 3px solid var(--primary-color);}*/
 
 button.search-btn{
     height: 50px;
@@ -211,7 +231,7 @@ button.search-btn:hover{
 button.search-btn:active{text-decoration: none;}
 
 @media (max-width: 768px) {
-    .form{
+   /* .form{
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -220,10 +240,14 @@ button.search-btn:active{text-decoration: none;}
     }
 
     input.search-field{
-        width: 65%;
+        width: 100%;
         margin-right: 0px;
-        margin-top: 20px;
+        margin-top: 0px;
+    }*/
+    .input-container{
+        width: 50%;
     }
+
     button.search-btn{
         margin-top: 20px;
     }
@@ -778,7 +802,7 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
 
     .footer__container__dx--form{display: flex; flex-direction: column; justify-content: center; align-items: center;}
     .footer__container__sect--form input{margin-bottom: 0px;}
-    input.search-small{margin-bottom: 20px; width: 50%;}
+    input.search-small{width: 45%; margin: 20px auto; }
     
 
     .footer__container__sect{width: 100%;} 
@@ -862,6 +886,7 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
         grid-template-columns: repeat(2, 1fr); 
     }
     .showOn2col{display: block;}
+
 }
 
 @media (max-width: 1000px){
@@ -873,7 +898,7 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
         padding: 15px 20px;
     }
 
-    .actFilterCont__filter{width: 100%; margin: 10px 20px 20px 0; }
+    .actFilterCont__filter{width: 100%; margin: 10px 0 40px 0; }
 }
 
 @media (max-width: 600px){
@@ -881,7 +906,7 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
         grid-template-columns: repeat(1,1fr);    
     }
 }
-/*----------- ACTIVITY PAGE ------------*/
+/*-----------  SINGLE ACTIVITY PAGE ------------*/
 .hero--small{
     height: 80vh;
     background: url(img/horse1_singleAct.jpg) no-repeat center center;
@@ -891,6 +916,8 @@ footer .footer__container h5{font-size: 1.1rem;padding-top: 10px;}
     background-size: cover;
     background-position: center;
 }
+
+h2.tac{text-align: center;}
 
 section.singleAct{
     margin: 3% 4% 2% 4%; 
@@ -1019,6 +1046,9 @@ hr.divide{width: 100%; margin-bottom: 15px; text-align: center;}
 }
 
 @media (max-width: 400px) {
+    .textContainer{width: 100%; padding: 0;}
+    .textContainer h4{padding: 20px 0 15px 0}
+
     .step{
         flex-direction: column;
     }
@@ -1026,6 +1056,14 @@ hr.divide{width: 100%; margin-bottom: 15px; text-align: center;}
     .step__item--text h5{
         padding: 5px 0;
     }
+
+    .actDescription__icon{
+        margin: 20px 0;
+        padding: 0px 0px 0 0px; 
+       flex-direction: column;
+    }
+
+    .actDescription__icon i,.actDescription__icon span{ padding-top: 20px;}
 }
 
 /* hero rent */
@@ -1052,9 +1090,7 @@ hr.divide{width: 100%; margin-bottom: 15px; text-align: center;}
 .chiSiamoMain h2{
     padding: 5% 0 2% 0;
 }
-.textContainer{
-    padding: 0 4%;
-}
+
 
 .textContainer p{
     text-align: left;
@@ -1136,6 +1172,7 @@ p.col50--smallText{ padding: 2% 20% 20% 30%; font-size: 1.2rem }
 
    @media (max-width: 500px){
     .col50__imgVert img{width: 100%; text-align: center;}
+    .textContainer__twoColCont--textImg{padding: 2% 0 7% 0}
 
     .textContainer__twoColCont > .col50{padding: 5% 0}
    }
