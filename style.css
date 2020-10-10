@@ -404,6 +404,7 @@ h2#carouselTitle{
 }
 
 .card-carousel .img-carousel{
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
