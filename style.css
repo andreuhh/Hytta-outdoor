@@ -61,8 +61,9 @@ button{outline: none; cursor: pointer;}
     background: var(--primary-color); 
     font-weight: 500; 
     color: var(--secondary-color);  
-
 }
+
+.button:hover{opacity: .9;}
 
 
 /*---------------------Header--------------------------------------*/
@@ -482,6 +483,8 @@ button.btn-secondary{
     cursor: pointer;
 }
 
+button.btn-secondary{opacity: .9;}
+
 /* REGISTER BLOCKS */
 section.registerBlock{
     padding: 0 30px;
@@ -508,6 +511,15 @@ section.registerBlock{
 
 .registerBlock__container__item2{
     background:url(img/bivacco.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    min-height: 330px; 
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+}
+
+.registerBlock__container__item3{
+    background:url(img/supPortofino-small.jpg) no-repeat center center;
     background-size: cover;
     background-position: center;
     min-height: 330px; 
